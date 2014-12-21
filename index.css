@@ -64,7 +64,7 @@
   color: #fff;
 }
 
-.validation-msg__warning::after{
+.v2-validation-msg__warning::after{
   content: "\E01E";
   color: #fff;
   border-right: 2px solid #fff;
