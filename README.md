@@ -3,17 +3,17 @@ Alerts v2
 
 Alerts for nib pages.
 
-    <div class="validation-msg validation-msg__error margin-normal">
-        <div class="validation-msg--title">Message Title</div>
+    <div class="v2-validation-msg v2-validation-msg__error margin-normal">
+        <div class="v2-validation-msg--title">Message Title</div>
         Message content
     </div>
 
 This component contains the following modifiers:
 
-    validation-msg__error       // Error message
-    validation-msg__success     // Success message
-    validation-msg__alert       // Alert message
-    validation-msg__info        // Information message
+    v2-validation-msg__error       // Error message
+    v2-validation-msg__success     // Success message
+    v2-validation-msg__alert       // Alert message
+    v2-validation-msg__info        // Information message
 
 
 Always use both the base validation-msg with the modifier class
