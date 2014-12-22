@@ -70,9 +70,6 @@
   border-right: 2px solid #fff;
 }
 
-.v2-validation-msg__success--centered-tick::after {
-  padding-top: 35px;
-}
 
 @keyframes pop-out {
   0% {
