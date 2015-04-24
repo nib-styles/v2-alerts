@@ -83,7 +83,7 @@
   border-right: 2px solid #fff;
 }
 
-.v2-alert--title {
+.v2-alert__title {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
