@@ -1,11 +1,14 @@
 {
   "name": "v2-alerts",
-  "version": "0.0.1",
   "styles": [
     "index.css"
   ],
   "dependencies": {
-    "nib-styles/v2-icons": "~2.0.0"
+    "nib-styles/v2-icons": "~2.1.1"
+  },
+  "development": {
+    "dependencies": {
+      "nib-styles/v2-typography": "*"
+    }
   }
-
 }
