@@ -1,0 +1,17 @@
+{
+  "name": "v2-alerts",
+  "version": "1.0.2",
+  "main.css": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-styles/v2-alerts.git"
+  },
+  "dependencies": {
+    "@nib-styles/v2-icons": "~2.1.1"
+  },
+  "development": {
+    "dependencies": {
+      "@nib-styles/v2-typography": "*"
+    }
+  }
+}
