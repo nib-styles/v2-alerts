@@ -1,6 +1,6 @@
 {
   "name": "v2-alerts",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "styles": [
     "index.css"
   ],
@@ -8,7 +8,7 @@
 	"index.scss"
   ],
   "dependencies": {
-    "nib-styles/v2-icons": "~2.1.1"
+    "nib-styles/v2-icons": "~2.4.2"
   },
   "development": {
     "dependencies": {
