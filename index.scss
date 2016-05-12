@@ -1,94 +1,79 @@
+@import "@nib-styles/v2-icons";
+@import "@nib-styles/v2-typography";
 
-@keyframes v2-alert-pop-out {
-  0% {
-    padding-top: 100%;
-  }
-  20% {
-    padding-top: 100%;
-  }
-  100% {
-    padding-top: inherit;
-  }
+@mixin alert-icon($name) {
+  @include v2-icon($name, $color: "white", $after: true);
 }
 
-.v2-alert {
-  padding: 20px 20px 20px 86px;
+.alert {
+  display: inline-block;
   position: relative;
-  min-height: 50px;
-  font-size: 16px;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 3px;
+  min-height: 52px;
+  border-width: 4px;
+  border-style: solid;
+  padding-left: 72px;
 }
 
-.v2-alert::after {
-  /* use nib-styles/v2-icons as font to get icons */
-  font: normal normal normal 14px/1 'nibdings';
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 40px;
+.alert::after {
+  font-size: 28px;
   position: absolute;
-  padding-top: 10px;
-  top: 15px;
-  bottom: 15px;
-  left: 0;
-  width: 65px;
-  color: #fff;
+  padding-top: 11px;
+  top: 0;
+  left: -4px;
+  width: 60px;
+  min-height: 100%;
   text-align: center;
-  animation: v2-alert-pop-out 0.6s cubic-bezier(0.19, 1, 0.22, 1);;
+  box-sizing: border-box;
 }
 
-.v2-alert--error {
-  background-color: #df6666;
-  color: #fff;
+.alert__title {
+  @include title($size: 4);
+  padding: 11px 12px 10px 0px;
 }
 
-.v2-alert--error::after {
-  content: "\E004";
-  color: #fff;
-  border-right: 2px solid #fff;
+.alert__title:first-child:last-child {
+  @include copy($size: 'large');
+  padding: 0px 12px 0px 0px;
+  line-height: 52px;
 }
 
-.v2-alert--info {
-  background-color: #55a2df;
-  color: #fff;
+.alert__message {
+  @include copy();
+  padding: 0px 12px 11px 0px;
 }
 
-.v2-alert--info::after {
-  content: "\E00D";
-  color: #fff;
-  border-right: 2px solid #fff;
+.alert--error {
+  @include alert-icon('close-circle-inverse');
+  border-color: #E74C3C;
 }
 
-.v2-alert--success {
+.alert--error::after {
+  background-color: #E74C3C;
+}
+
+.alert--success {
+  @include alert-icon('tick-circle-inverse');
+  border-color: #009623;
+}
+
+.alert--success::after {
   background-color: #009623;
-  color: #fff;
 }
 
-.v2-alert--success::after{
-  content: "\E01C";
-  color: #fff;
-  border-right: 2px solid #fff;
+.alert--warning {
+  @include alert-icon('warning-inverse');
+  border-color: #ffb400;
 }
 
-.v2-alert--warning {
+.alert--warning::after {
   background-color: #ffb400;
-  color: #fff;
 }
 
-.v2-alert--warning::after{
-  content: "\E01E";
-  color: #fff;
-  border-right: 2px solid #fff;
+.alert--info {
+  @include alert-icon('info-circle-inverse');
+  border-color: #02abcc;
 }
 
-.v2-alert__title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 10px;
+.alert--info::after {
+  background-color: #02abcc;
 }
-
-
-
-

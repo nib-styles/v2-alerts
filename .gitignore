@@ -1,3 +1,6 @@
 .idea/
+.nvmrc
 build/
 components/
+node_modules/
+example/index.bundled.css
