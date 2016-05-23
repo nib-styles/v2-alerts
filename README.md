@@ -1,10 +1,10 @@
-# @nib-styles/v2-alerts
+# @nib-styles/alerts
 
 Alerts for nib pages.
 
 ## Installation
 
-    npm install --save @nib-styles/v2-alerts
+    npm install --save @nib-styles/alerts
 
 ## Usage
 
