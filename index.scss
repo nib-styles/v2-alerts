@@ -34,7 +34,7 @@
 
 .alert__title:first-child:last-child {
   @include copy($size: 'large');
-  padding: 0px 0px 0px 0px;
+  padding: 0;
   line-height: 52px;
 }
 
