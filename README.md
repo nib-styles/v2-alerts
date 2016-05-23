@@ -22,7 +22,7 @@ alert with a title:
       <div class="alert__message">We're sorry, due to too many invalid login attempts your account is locked</div>
     </div>
 
-alert with a title and message:
+alert with a title and a message:
 
     <div class="alert alert--error">
       <div class="alert__title">We're sorry, due to too many invalid login attempts your account is locked</div>
