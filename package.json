@@ -1,6 +1,6 @@
 {
   "name": "@nib-styles/alerts",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main.css": "index.scss",
   "repository": {
     "type": "git",

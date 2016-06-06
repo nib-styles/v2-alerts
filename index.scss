@@ -8,12 +8,10 @@
 .alert {
   display: inline-block;
   position: relative;
-  min-height: 52px;
   border-width: 4px;
   border-style: solid;
-  padding-left: 72px;
-  padding-right: 12px;
-  background-color: #ffffff;
+  padding: 12px 12px 12px 72px;
+  background-color: #fff;
 }
 
 .alert::after {
@@ -21,27 +19,26 @@
   position: absolute;
   padding-top: 11px;
   top: 0;
+  bottom: 0;
   left: -4px;
   width: 60px;
-  min-height: 100%;
   text-align: center;
   box-sizing: border-box;
 }
 
 .alert__title {
   @include title($size: 4);
-  padding: 11px 0px 10px 0px;
+  padding: 0 0 10px 0;
 }
 
 .alert__title:first-child:last-child {
   @include copy($size: 'large');
-  padding: 0;
-  line-height: 52px;
+  padding: 3px 0;
 }
 
 .alert__message {
   @include copy();
-  padding: 0px 0px 11px 0px;
+  padding: 0;
 }
 
 .alert--error {
