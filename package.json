@@ -1,13 +1,13 @@
 {
   "name": "@nib-styles/alerts",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "main.css": "index.scss",
   "repository": {
     "type": "git",
     "url": "git@github.com:nib-styles/v2-alerts.git"
   },
   "dependencies": {
-    "@nib-styles/v2-icons": "^2.6.2",
+    "@nib-styles/v2-icons": "^3.0.0",
     "@nib-styles/v2-typography": "^4.2.0"
   },
   "devDependencies": {
